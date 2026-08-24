@@ -25,7 +25,7 @@ I'd want to build some kind of combined risk score using overtime, tenure, and j
 
 ## Files in this repository
 
-- `SQLQuery HRAnalytics.sql` - all the SQL queries
+- `SQLQuery_HRAnalytics.sql` - all the SQL queries
 - `HR_Attrition_Dashboard.pbix` - the Power BI file
 - `HR_Attrition_Dashboard.pbi.png` - a screenshot of the finished dashboard
-- `Attrition_By_Department.sql.png`, `Attrition_By_Overtime_Status.sql.png`, `Attrition_By_Tenure_Bucket.sql.png`, `Overall_Attrition_Rate.sql.png`, `Average_monthly_income_of_leavers_vs._stayers` - Screenshots of the SQL codes
+- `Attrition_By_Department.sql.png`, `Attrition_By_Overtime_Status.sql.png`, `Attrition_By_Tenure_Bucket.sql.png`, `Overall_Attrition_Rate.sql.png`, `Average_monthly_income_of_leavers_vs._stayers_by_job_role.sql.png` - Screenshots of the SQL codes
