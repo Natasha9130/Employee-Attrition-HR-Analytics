@@ -8,7 +8,7 @@ I used the IBM HR Analytics Employee Attrition dataset from Kaggle - 1,470 emplo
 
 ## What I did
 
-I loaded the CSV into SQL Server first. One thing I ran into early on: a couple of columns (Attrition and OverTime) got auto-detected as `bit` type instead of text, which would've broken my queries since I needed to match on "Yes"/"No" - so I changed those to nvarchar before importing.
+I loaded the CSV into SQL Server first. One thing I ran into early on: a couple of columns (Attrition and OverTime) got auto-detected as 'bit' type instead of text, which would've broken my queries since I needed to match on "Yes"/"No" - so I changed those to nvarchar before importing.
 
 From there I wrote a few SQL queries to look at attrition rate broken down by department, tenure, and overtime status. Once I had a feel for the numbers, I connected Power BI straight to the SQL Server database and built out a dashboard with some DAX measures (attrition rate %, average tenure, average income) plus a calculated column to group employees into tenure buckets (0-2 years, 2-5 years, etc.).
 
@@ -25,6 +25,8 @@ I'd want to build some kind of combined risk score using overtime, tenure, and j
 
 ## Files in this repository
 
-- `attrition_analysis.sql` - all the SQL queries
-- `HR_Attrition_Dashboard.pbix` - the Power BI file
-- `dashboard_screenshot.png` - a screenshot of the finished dashboard
+- 'SQLQuery HRAnalytics.sql' - all the SQL queries
+- 'HR_Attrition_Dashboard.pbix' - the Power BI file
+- 'HR_Attrition_Dashboard.pbi.png' - a screenshot of the finished dashboard
+- 'Attrition_By_Depertment.sql.png', 'Attrition_By_Overtime_Status.sql.png', 'Attrition_By_Tenure_Bucket.sql.png', 'Overall_Attrition_Rate.sql.png', 'Average_monthly_income_of_leavers_vs._stayers' - Screenshots of the SQL codes
+- 
